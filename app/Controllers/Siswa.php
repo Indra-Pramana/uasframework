@@ -14,11 +14,7 @@ class Siswa extends BaseController
         $this->siswa = new SiswaModel();
     }
 
-    public function index()
-    {
-        $data['siswa'] = $this->siswa->findAll();
-        return view('siswa/index', $data);
-    }
+    
 
     public function create()
     {
